@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- ====== HEADER ====== -->
+    <header class="nav">
+      <div class="container">
+        <a
+          class="brand animate__animated animate__fadeInDown animate__faster"
+          href="#"
+        >
+          <strong>MinhaMarca</strong>
+        </a>
+
+        <nav class="menu animate__animated animate__fadeInDown">
+          <div><button class="dropbtn">Nossos jogos</button></div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Sobre nós</button>
+            <ul class="dropdown-menu">
+              <li><a href="#sobre-nos">O projeto</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Faça uma doação</button>
+            <ul class="dropdown-menu">
+              <li><a href="#sobre-nos">Quero doar</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- botão ENTRAR -->
+          <a id="loginBtn" class="btn-login" href="/login">Entrar</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+      <div
+        class="hero-media animate__animated animate__fadeInUp animate__slower">
+        <img src="/src/assets/banner.png" alt="Banner principal" />
+      </div>
+    </section>
+
+    <!-- ====== CONHEÇA NOSSOS JOGOS ====== -->
+    <section id="jogos" class="section">
+      <div class="container">
+        <h2 class="section-title animate__animated animate__fadeIn">
+          CONHEÇA NOSSOS JOGOS
+        </h2>
+
+        <!-- skeleton -->
+        <div
+          id="skeleton-cards"
+          class="skeleton-container animate__animated animate__fadeIn"
+        ></div>
+
+        <!-- conteúdo real -->
+        <div id="real-cards" class="cards hidden">
+          <!-- Jogo 1 -->
+          <article class="card animate__animated animate__zoomIn">
+            <figure class="cover">
+              <img src="/src/assets/jogo1.png" alt="Capa do Jogo 1" />
+            </figure>
+            <div class="card-body">
+              <h3>Jogo 1</h3>
+              <p>Aventura dinâmica com desafios diários.</p>
+              <button id="verMais1" class="btn-vermais">Ver mais</button>
+            </div>
+          </article>
+
+          <!-- Jogo 2 -->
+          <article
+            class="card animate__animated animate__zoomIn animate__delay-1s"
+          >
+            <figure class="cover">
+              <img src="/src/assets/jogo2.png" alt="Capa do Jogo 2" />
+            </figure>
+            <div class="card-body">
+              <h3>Jogo 2</h3>
+              <p>Combates estratégicos e progressão cooperativa.</p>
+              <button id="verMais2" class="btn-vermais">Ver mais</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SOBRE NÓS ====== -->
+    <section id="sobre-nos" class="section section-alt">
+      <div class="container about-grid">
+        <div class="about-media animate__animated animate__fadeInLeft">
+          <img src="/src/assets/mockup.png" alt="Mockup do aplicativo" />
+        </div>
+
+        <div class="about-copy animate__animated animate__fadeInRight">
+          <h2>SOBRE NÓS</h2>
+          <p>
+            Somos apaixonados por construir jogos que conectam pessoas. Nossa
+            equipe une arte, tecnologia e pesquisa para entregar experiências
+            memoráveis — sempre com foco em acessibilidade, performance e
+            diversão.
+          </p>
+          <p>
+            Do protótipo ao lançamento, cultivamos uma cultura aberta,
+            colaborativa e orientada por dados. Queremos que cada detalhe conte
+            uma história.
+          </p>
+          <a href="#" id="saibaMais" class="cta ghost">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

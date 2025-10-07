@@ -53,6 +53,7 @@ input {
   text-align: center;
   margin-top: 10px;
 }
+
 button {
   width: 60%;
   padding: 10px 12px;
@@ -69,6 +70,7 @@ button:focus,
 input:focus-visible {
   outline: 2px dashed #555;
   outline-offset: 4px;
+
 }
 .wrapper > .container:nth-child(1) input::placeholder {
   position: absolute;
@@ -80,6 +82,7 @@ input:focus-visible {
   pointer-events: none;
   transition: transform 0.3s ease, top 0.3s ease, color 0.3s ease,
     font-size 0.3s ease;
+
 }
 .wrapper > .container:nth-child(1) input:focus::placeholder,
 .wrapper > .container:nth-child(1) input:not(:placeholder-shown)::placeholder {
@@ -87,6 +90,7 @@ input:focus-visible {
   transform: translate(-50%, 0) scale(1);
   color: #111;
   font-size: 12px;
+  
 }
 .wrapper > .container:nth-child(1) .input-group::after {
   content: "";

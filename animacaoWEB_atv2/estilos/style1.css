@@ -1,0 +1,53 @@
+.loader-circular {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  animation: loading;
+  animation-duration: 0.5s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+@keyframes loading {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+}
+
+/* .loader-circular {
+  /* ajustes rápidos */
+  --size: 100px;
+  --cor1: #6c5ce7;    /* roxo */
+  --cor2: #00d2d3;    /* turquesa */
+  --dur: 1s;          /* velocidade da rotação */
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+
+  /* duas cores em setores: metade cor1, metade cor2 */
+  background:
+    conic-gradient(var(--cor1) 0 50%, var(--cor2) 50% 100%);
+
+  /* fura o meio pra parecer um anel */
+  -webkit-mask: radial-gradient(closest-side, transparent 55%, #000 56%);
+          mask: radial-gradient(closest-side, transparent 55%, #000 56%);
+
+  /* animação contínua */
+  animation: spin var(--dur) linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+} */
